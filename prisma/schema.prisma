@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -15,11 +12,12 @@ model User {
   name String
   email String 
   image String
-  favorites Favorites []
+  favorites Favorites[]
 }
 
 type Favorites{
-    city String
-    temperatura String
-    humedad String
+  // id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  city        String
+  temperatura String
+  humedad     String
 }
