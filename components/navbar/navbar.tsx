@@ -1,11 +1,11 @@
-import ImageIcon from '../image-icon'
 import Link from 'next/link'
+import IconButton from '../buttons/icon-button'
 
 const Navbar = () => {
 	return (
 		<div className='w-full py-5 flex justify-around items-center'>
 			<Link href={'/'}>
-				<ImageIcon
+				<IconButton
 					data={{
 						imageUrl: '/cloud.svg',
 						alt: 'profile',
@@ -16,7 +16,7 @@ const Navbar = () => {
 			</Link>
 
 			<Link href={'/search'}>
-				<ImageIcon
+				<IconButton
 					data={{
 						imageUrl: '/Magnifier.svg',
 						alt: 'profile',
@@ -27,7 +27,7 @@ const Navbar = () => {
 			</Link>
 
 			<Link href={'/favorites'}>
-				<ImageIcon
+				<IconButton
 					data={{
 						imageUrl: '/save.svg',
 						alt: 'profile',
@@ -38,7 +38,7 @@ const Navbar = () => {
 			</Link>
 
 			<Link href={'/favorites'}>
-				<ImageIcon
+				<IconButton
 					data={{
 						imageUrl: '/account.svg',
 						alt: 'profile',

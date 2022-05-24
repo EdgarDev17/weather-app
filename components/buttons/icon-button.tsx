@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import { ImageIcon } from '../interfaces/image-icon'
+import { ImageIcon } from '../../interfaces'
 
 type Props = {
 	data: ImageIcon
 }
 
-const ImageIcon = ({ data }: Props) => {
+const IconButton = ({ data }: Props) => {
 	return (
 		<Image
 			src={data.imageUrl}
@@ -16,4 +16,4 @@ const ImageIcon = ({ data }: Props) => {
 	)
 }
 
-export default ImageIcon
+export default IconButton
